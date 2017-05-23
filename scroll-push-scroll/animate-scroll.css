@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0
+}
+
+.container{
+    /*border: 1px solid #345;*/
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+.parent{
+    /*border: 1px solid black;*/
+    height: 400px;
+    width: inherit;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*overflow: hidden; */
+}
+
+.card{
+    float: left;
+    width: 150px;
+    height: 400px;
+    transition: all 2s linear;
+}
+.first{
+    background: #345;
+}
+.second{
+    background: #3fa3c9;
+}
+.third{
+    background: tomato;
+}
+.fourth{
+    background: yellowgreen;
+}
+.card:not(:last-child){
+    margin-right: 10px;
+}
+.card:last-child{
+    transform: translateY(+400px);
+}
+.card:first-child{
+    transform: translateY(0px);
+}
